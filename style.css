@@ -150,6 +150,44 @@ nav{
     
 }
 
+.c-images{
+    display: flex;
+    justify-content: space-around;
+
+
+}
+.customers{
+    display: flex;
+    width: 65%;
+    margin: 2rem auto;
+    justify-content: center;
+    align-items: center ;
+    
+}
+.c-title p{
+    font-size:1.5rem;
+    color: #474646;
+    
+
+}
+.c-title h2{
+    font-size: 2.5rem;
+    font-weight: lighter;
+    margin: 1rem 0;
+
+}
+.c-images,.c-title{
+    width: 50%;
+}
+.c-images{
+    width: 40%;
+    
+}
+.c-left,.c-right{
+    display: flex;
+    flex-direction: column;
+}
+
 
 
 @media (max-width:1390px){
@@ -157,7 +195,12 @@ nav{
         width: 80%;
     }
 
+    .customers{
+        width: 75%;
+    }
 }
+
+
 @media (max-width: 1340px){
     .title h2{
         font-size: 2rem;
@@ -178,6 +221,9 @@ nav{
     .bi-list{
         display: block;
     }
+    .customers{
+        width: 90%;
+    }
 }
 @media (max-width:790px){
     .title h2{
@@ -189,6 +235,29 @@ nav{
     }
 
 }
+@media (max-width:700px){
+
+    .customers{
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .c-imagesm,.c-title{
+        width: 90%;
+        text-align: center;
+    }
+    .c-title p{
+        font-size: 1rem;
+        
+    }
+    .c-title h2{
+        font-size: 2.5rem;
+
+    }
+
+}
+
+
+
 @media (max-width: 665px){
     .hero{
         flex-direction: column;
